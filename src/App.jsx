@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom"
+import { createBrowserRouter, createHashRouter, RouterProvider } from "react-router-dom"
 import Login from "./Pages/Login/Login"
 import Signup from "./Pages/Signup/Signup"
 import Home from "./Pages/Home/Home"
@@ -32,7 +32,7 @@ let query = new QueryClient({
 
 
 function App() {
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       path: "/", element: <Layout />, children: [
         { index: true, element: <ProtectRoutes><Home /></ProtectRoutes> },
