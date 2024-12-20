@@ -20,7 +20,7 @@ export default function Cart() {
             {numOfItems == 0 ? <>
                 <div className="flex flex-col justify-center items-center">
                     <img src={emptyCart} alt="emptyCart image" className="w-full max-w-[500px]" />
-                    <h2 className="text-orange-400 text-2xl">Cart is Empty</h2>
+                    <h2 className="text-[#ff8c00] font-semibold text-2xl">Cart is Empty</h2>
                 </div>
             </> : <div>
                 <div className="bg-gray-300 text-center">
